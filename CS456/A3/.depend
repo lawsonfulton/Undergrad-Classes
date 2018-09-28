@@ -1,0 +1,3 @@
+router.o: router.cpp OutgoingSocketManager.h MyExceptions.h structs.h
+OutgoingSocketManager.o: OutgoingSocketManager.cpp \
+  OutgoingSocketManager.h MyExceptions.h

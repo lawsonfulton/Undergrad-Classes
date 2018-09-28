@@ -1,0 +1,23 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"SublimeLinter": {
+      "linters": {
+         "java": {
+            "working_directory": "/Users/lawson/Workspace/CS456/A2/",
+                "lint_args":
+                [
+                    "-sourcepath", "./",
+                    "-classpath", "./",
+                    "-Xlint", "-Xlint:-serial",
+                    //"{filename}"
+                ]
+         }
+      }
+   }
+}

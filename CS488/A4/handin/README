@@ -1,0 +1,46 @@
+Name: Lawson Fulton
+Student Number: 20381453
+User-id: ljfulton
+Assignment: A4
+
+The final executable was compiled on this machine: gl08
+
+How to invoke my program: 
+Build
+$ cd src/
+$ make
+
+Execute
+$ ./rt <scene filename>
+
+NOTE: Your current directory is the working directory for your lua script. So for example, if you are running hier.lua you must do:
+$ cd data
+$ ../rt ./hier.lua
+
+
+How to use my extra features: 
+- Supersampling and Multithreading: Controlled by compile time flags in options.hpp (On by default.)
+
+Sample.lua render time on 2.2GHz Intel Core i7
+****8 Threads + 4x4 AA****
+Running time: 347.373 seconds
+
+****1 Thread + 4x4 AA****
+Running time: 1471.39 seconds
+
+- Reflections and Refractions: gr.fancy_material({dr, dg, db}, {sr, sg, sb},
+												 shininess, reflectivity, ior,refractivity)
+The 3 new terms at the end are scalar values specifying the amount of reflection and refraction,
+along with the index of refraction(ior) of the material.
+
+I have created the following data files, which are in the data directory:
+sample.lua, sample.png, sample-noAA.png
+nonhier.png, nohier-bb.png, macho_cows.png, macho_cows-bb.png, simple_cows.png, simple_cows-bb.png, hier.png
+
+My sample scene demonstrates all objectives and additional features: Cube, Sphere, Phong Shading, Shadows, Re
+The scene is my A3 puppet staring into a glowing crystal ball(refraction) mounted on a stand made of a mesh cylinder and transformed cube. In the foreground is a reflective fractal sphere snowflake (reflections). Also it was rendered with 4x4 uniform supersampling (Anti aliasing) with 8 threads running(efficiency).
+
+Since my sample scene was rendered at a high resolution, I recommend going to View->Normal Size in the image viewer to see the difference between sample.png (4x4 AA) and sample-noAA.png.
+
+My program assumes the following:
+N/A

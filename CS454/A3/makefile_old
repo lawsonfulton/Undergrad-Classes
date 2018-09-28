@@ -1,0 +1,62 @@
+CC=gcc
+CXX=g++
+RM=rm -f
+CPPFLAGS=-g -std=c++0x 
+LDFLAGS=-g
+LDLIBS=
+
+CMMNSRCS= Message.cpp Messenger.cpp IncomingSocketManager.cpp OutgoingSocketManager.cpp
+
+BNDRSRCS= BinderMain.cpp Binder.cpp $(CMMNSRCS)
+BNDROBJS=$(subst .cpp,.o,$(BNDRSRCS))
+
+LIBRPCSRCS= rpc.cpp $(CMMNSRCS)
+LIBRPCOBJS=$(subst .cpp,.o,$(LIBRPCSRCS))
+
+all: binder librpc
+
+binder: $(BNDROBJS)
+	$(CXX) $(LDFLAGS) -o binder $(BNDROBJS) $(LDLIBS) 
+
+librpc: rpc.cpp
+	$(CXX) -c $(LIBRPCSRCS)
+	ar rcs librpc.a $(LIBRPCOBJS)
+
+depend: .depend
+
+.depend: $(BNDRSRCS) $(CMMNSRCS) $(LIBRPCSRCS)
+	rm -f ./.depend
+	$(CXX) $(CPPFLAGS) -MM $^>>./.depend;
+
+clean:
+	$(RM) $(BNDROBJS)
+
+dist-clean: clean
+	$(RM) *~ .dependtool
+
+include .depend
+
+###
+
+all : binder librpc.a
+
+BINDER_SRCS= BinderMain.cpp Binder.cpp Message.cpp Messenger.cpp IncomingSocketManager.cpp OutgoingSocketManager.cpp
+
+RPC_SRCS= rpc.cpp Message.cpp Messenger.cpp IncomingSocketManager.cpp OutgoingSocketManager.cpp
+
+BINDER_OBJS=$(subst .cpp,.o,$(BINDER_SRCS))
+RPC_OBJS=$(subst .cpp,.o,$(RPC_SRCS))
+
+binder: $(BINDER_SRCS)
+	g++ $(BINDER_SRCS) -o binder
+
+librpc.a: $(RPC_SRCS)
+	g++ -c $(RPC_SRCS)
+	ar rcs librpc.a $(RPC_OBJS)
+
+client1: u.c v.c w.c
+
+
+
+
+

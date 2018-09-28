@@ -1,0 +1,68 @@
+***Notes***
+
+-Not required to do reflection?
+-A constant background is not acceptable.
+-The easiest way to implement a hierarchical raytracer is to transform each ray from the Viewing
+Coordinate System (VCS) to the Modeling Coordinate System (MCS) of each model. The trans-
+formed ray is then intersected with models in a canonical position, so you can take advantage of
+special forms of equations. 
+-, you will probably find it easiest if you first
+write a non-hierarchical raytracer (Objectives 1-6). Once you have that part of the code debugged,
+add the hierarchical part (Objectives 8,9; affine transformations, a general hierarchy, and bounding
+volumes for polyhedral objects).
+
+***Warings***
+
+Numerical problems abound. In particular, watch for the following:
+- Try to minimise the number of times that you normalize vectors and normals. Each time
+you normalize, you introduce a small amount of error that can cause major problems.
+
+- The intersection of the ray and an object may actually be slightly inside the object.
+When casting secondary rays (such as shadow rays), the rst object the secondary rays
+will hit will be the same object. To avoid this problem, discard all intersections that
+occur too close to the ray origin.
+
+- Use \epsilon" checks in your intersection routines, particularly the ray-intersect-polygon
+routine
+In hierarchical ray tracing, on \the way down" you should transform the point and vector
+forming the ray with the inverse transform.On \the way back up" you should transform
+the intersection point by the transformation, and (assuming you represent the normal as a
+column vector) you should transform the normal with the transpose of the inverse transform. Potentially, this transformation of the normal will result in a non-zero 4th coordinate, in which case you should set the 4th coordinate to 0 (or, write a special matrix-vector product that ignores the fourth coordinate, and uses the transpose). To speed things up you way want to precompute and cache all the VCS-MCS transformations. Expand the DAG into a strict hierarchy rst if you use caching.
+
+
+***TODO***
+
+You are required to implement the following ray tracing functionality:
+
+- Hierarchical transformations and models. Use code from A3
+
+- The sphere, cube, and (convex, planar) polygonal mesh geometry types.
+
+- Bounding volumes (sphere or boxes) for polygonal mesh types.
+
+- Point light sources, with a Phong lighting model.
+
+- Output of the resulting image to a PNG file.
+
+- One additional feature of your own choosing, and a scene file (and resulting image) that demonstrates this feature
+
+
+Sample Command: You are required to implement an \additional" non-trivial feature. 
+
+
+*** Things To Test ***
+- Generate all rays at once, or one at a time?
+- Precompute matrices in camera to speed up
+- enable -O3
+- still gotta fix box normals
+
+Before O3
+real	0m14.520s
+user	0m14.453s
+sys	0m0.044s
+
+
+
+***IMPORTANT**
+is it Lookat or look in direction?
+

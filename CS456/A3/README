@@ -1,0 +1,29 @@
+Main source file: router.cpp
+
+How to Build:
+    $make
+
+How to Run Emulator:
+    $ ./nse-linux386 <routers host> <emulator port>
+
+How To Run Routers:
+    $ ./start.sh <emulator address> <emulator port> <routers port>
+
+Example:
+    host1$ ./nse-linux386 host2 8080
+
+    host2$ ./start.sh host1 8080 8081
+
+Output:
+	router1.log
+	router2.log
+	router3.log
+	router4.log
+	router5.log
+
+Terminate with ctrl + C when emulator no longer shows activity.
+
+Tested Using:
+    GNU Make version 3.81
+    g++ version 4.6.3
+    Undergrad Environment machines: ubuntu1204-002, ubuntu1204-004, ubuntu1204-006

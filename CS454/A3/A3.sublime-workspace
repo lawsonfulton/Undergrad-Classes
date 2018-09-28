@@ -1,0 +1,3983 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"print",
+				"printException(int e)	int"
+			],
+			[
+				"Mess",
+				"Message	class"
+			],
+			[
+				"serv",
+				"serverSockets	std::vector<int>"
+			],
+			[
+				"ser",
+				"server	ServerInfo *"
+			],
+			[
+				"server",
+				"serverInfo	ServerInfo *"
+			],
+			[
+				"servers",
+				"serversMutex	std::mutex"
+			],
+			[
+				"er",
+				"erase(const key_type &__k)	size_type"
+			],
+			[
+				"getAr",
+				"getArgDataType(int argType)	int"
+			],
+			[
+				"size",
+				"sizeOfArg(int argType)	int"
+			],
+			[
+				"argTe",
+				"argTypes	int *"
+			],
+			[
+				"msg",
+				"msgData	char*"
+			],
+			[
+				"arg",
+				"argsLength	int"
+			],
+			[
+				"serial",
+				"serializeArgs(char *destData, int index)	int"
+			],
+			[
+				"in",
+				"index	int"
+			],
+			[
+				"get",
+				"getArgArrayLength(int argType)	int"
+			],
+			[
+				"ARG_",
+				"ARG_OUTPUT	macro"
+			],
+			[
+				"EX",
+				"EXECUTE_FAILURE	MessageType"
+			],
+			[
+				"Mes",
+				"Messenger"
+			],
+			[
+				"c",
+				"c_str() const	const_pointer"
+			],
+			[
+				"po",
+				"portBuf"
+			],
+			[
+				"connectTo",
+				"connectTo(const char *address, const char *port)	int"
+			],
+			[
+				"Out",
+				"OutgoingSocketManager::connectTo"
+			],
+			[
+				"MESSAG",
+				"MessageType"
+			],
+			[
+				"bin",
+				"binderPort"
+			],
+			[
+				"bind",
+				"binderAddress"
+			],
+			[
+				"look",
+				"lookupBinder"
+			],
+			[
+				"loo",
+				"lookupServerInfo"
+			],
+			[
+				"TER",
+				"TERMINATE"
+			],
+			[
+				"L",
+				"LOC_SUCCESS"
+			],
+			[
+				"BIND",
+				"BINDER_FUNCTION_NOT_FOUND"
+			],
+			[
+				"ar",
+				"argTypes	int *"
+			],
+			[
+				"e",
+				"else"
+			],
+			[
+				"LO",
+				"LOC_FAILURE"
+			],
+			[
+				"MEss",
+				"Messenger"
+			],
+			[
+				"MyExc",
+				"MyExceptions"
+			],
+			[
+				"fi",
+				"first"
+			],
+			[
+				"data",
+				"database"
+			],
+			[
+				"conn",
+				"connection"
+			],
+			[
+				"connetion",
+				"connections"
+			],
+			[
+				"termin",
+				"terminateServers()	void"
+			],
+			[
+				"Server",
+				"ServerInfo"
+			],
+			[
+				"Binde",
+				"Binder::handleServerConnection"
+			],
+			[
+				"prin",
+				"printException(int e)	int"
+			],
+			[
+				"Bind",
+				"Binder::handleServerConnection"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"REG",
+				"REGISTER_SUCCESS"
+			],
+			[
+				"regi",
+				"registerServerFunction"
+			],
+			[
+				"UN",
+				"UNEXPECTED_MESSAGE_ERROR"
+			],
+			[
+				"pu",
+				"push_back"
+			],
+			[
+				"handleS",
+				"handleServerConnection(Message *msg, int socket)	void"
+			],
+			[
+				"inc",
+				"incomingSocket"
+			],
+			[
+				"start",
+				"startServerThread"
+			],
+			[
+				"socket",
+				"socket"
+			],
+			[
+				"RE",
+				"REGISTER_SUCCESS"
+			],
+			[
+				"de",
+				"delete"
+			],
+			[
+				"lis",
+				"listeningSocket"
+			],
+			[
+				"argT",
+				"argTypes	int*"
+			],
+			[
+				"Ser",
+				"ServerInfo"
+			],
+			[
+				"Serv",
+				"ServerInfo"
+			],
+			[
+				"nor",
+				"normalizeArrayLength"
+			],
+			[
+				"a",
+				"argTypesLength	int"
+			],
+			[
+				"args",
+				"argTypesLength"
+			],
+			[
+				"cal",
+				"calcArgsLength()	void"
+			],
+			[
+				"por",
+				"port"
+			],
+			[
+				"RECE",
+				"RECEIVE_HEADER_ERROR"
+			],
+			[
+				"byte",
+				"bytes	int"
+			],
+			[
+				"per",
+				"perror(\"gethostname"
+			],
+			[
+				"SOC",
+				"SOCKET_ERROR"
+			],
+			[
+				"U",
+				"UNKNOWN_HOST_ERROR"
+			],
+			[
+				"sock",
+				"sock_fd"
+			],
+			[
+				"incom",
+				"incomingSocket"
+			],
+			[
+				"REC",
+				"RECEIVE_BODY_ERROR"
+			],
+			[
+				"rec",
+				"receivedBytes	int"
+			],
+			[
+				"In",
+				"IncomingSocketManager::printSocketInfo"
+			],
+			[
+				"star",
+				"startListening"
+			],
+			[
+				"crea",
+				"createListeningSocket()	int"
+			],
+			[
+				"Con",
+				"CONNECTION_ERROR"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"M",
+				"MY_EXCEPTION"
+			],
+			[
+				"add",
+				"address"
+			],
+			[
+				"getS",
+				"getServerAddress"
+			],
+			[
+				"OU",
+				"OutgoingSocketManager"
+			],
+			[
+				"r",
+				"rpcExecute()	int"
+			],
+			[
+				"rpc",
+				"rpcRegister(char *name, int *argTypes, skeleton f)	int"
+			],
+			[
+				"rp",
+				"rpcInit"
+			],
+			[
+				"RPC",
+				"RPCServer"
+			],
+			[
+				"cli",
+				"client1"
+			],
+			[
+				"BIN",
+				"BINDER_OBJS"
+			],
+			[
+				"LI",
+				"LIBRPCOBJS"
+			],
+			[
+				"LIB",
+				"LIBRPCSRCS"
+			],
+			[
+				"ha",
+				"handle_error(msg)	macro"
+			],
+			[
+				"ms",
+				"msgData	char *"
+			],
+			[
+				"Messe",
+				"Messenger::receiveMessage"
+			],
+			[
+				"rece",
+				"receiveMessage"
+			],
+			[
+				"so",
+				"socketfd"
+			],
+			[
+				"NULL",
+				"NULL	macro"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"initVa",
+				"initVars()	void"
+			],
+			[
+				"new",
+				"newMsg"
+			],
+			[
+				"xxy",
+				"xxyx"
+			],
+			[
+				"list",
+				"listeningSocket"
+			],
+			[
+				"std",
+				"std=c++0x"
+			],
+			[
+				"he",
+				"helperFcns"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"rea",
+				"reasonCode"
+			],
+			[
+				"read",
+				"reasonCode"
+			],
+			[
+				"seria",
+				"serialize"
+			],
+			[
+				"str",
+				"strlen"
+			],
+			[
+				"se",
+				"serverIdentifier"
+			],
+			[
+				"E",
+				"ExecuteMessage"
+			],
+			[
+				"R",
+				"RegisterMessage"
+			],
+			[
+				"tp",
+				"type"
+			],
+			[
+				"bu",
+				"buildMessage"
+			],
+			[
+				"Me",
+				"MessageListener"
+			],
+			[
+				"st",
+				"static"
+			],
+			[
+				"li",
+				"listeningSocket"
+			],
+			[
+				"ac",
+				"accept"
+			],
+			[
+				"t",
+				"types"
+			],
+			[
+				"acce",
+				"acceptConnection"
+			],
+			[
+				"cl",
+				"clientSockets"
+			],
+			[
+				"host",
+				"hostname"
+			],
+			[
+				"s",
+				"socketfd"
+			],
+			[
+				"max",
+				"max_clients"
+			],
+			[
+				"addr",
+				"addr_size"
+			],
+			[
+				"ret_",
+				"ret_send_thread"
+			],
+			[
+				"cou",
+				"count_mutex"
+			],
+			[
+				"pthre",
+				"pthread_mutex_unlock"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "MyExceptions.h",
+			"settings":
+			{
+				"buffer_size": 650,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rpc.cpp",
+			"settings":
+			{
+				"buffer_size": 4030,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Message.cpp",
+			"settings":
+			{
+				"buffer_size": 11359,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "makefile",
+			"settings":
+			{
+				"buffer_size": 1082,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README",
+			"settings":
+			{
+				"buffer_size": 727,
+				"line_ending": "Unix",
+				"name": "Group Members:"
+			}
+		},
+		{
+			"file": "submit/SystemManual.txt",
+			"settings":
+			{
+				"buffer_size": 5715,
+				"line_ending": "Unix",
+				"name": "System Manual"
+			}
+		},
+		{
+			"contents": "Searching 24 files for \"cout\" (regex)\n\n/Users/lawson/Workspace/CS454/A3/Binder.cpp:\n   12  	database[sig].insert(info);\n   13  \n   14: 	std::cout << \"Registered function \" << sig.name << \" from \" << info->address << \":\" << info->port << std::endl;\n   15  	return 0;\n   16  }\n   ..\n   24  		int i = iter->second.erase(info);\n   25  		if(i > 0)\n   26: 			std::cout << \"Erased \" << iter->first.name << \" for \" << info->address <<\":\" << info->port << std::endl;\n   27  \n   28  		if(iter->second.empty())\n   29  		{\n   30: 			std::cout << \"Erased \" << iter->first.name << \" completely from the database\" << std::endl;\n   31  			database.erase(iter++);\n   32  		}\n   ..\n   55  	}\n   56  \n   57: 	std::cout << \"Received TERMINATE message. Quitting.\" << std::endl;\n   58  	exit(0);\n   59  }\n   ..\n   75  	ServerInfo *serverInfo = new ServerInfo(message->serverIdentifier, message->port);\n   76  \n   77: 	std::cout << \"Started server thread.\" << std::endl;\n   78  \n   79  	do\n   ..\n   84  			int result = registerServerFunction(sig, serverInfo);\n   85  \n   86: 			std::cout << \"Sending response.\" << std::endl;\n   87  			Message response(REGISTER_SUCCESS, result);\n   88  			try\n   ..\n   99  		}\n  100  \n  101: 		std::cout << \"Waiting for next message.\" << std::endl;\n  102  \n  103  		//Keep waiting to hear from the server\n  ...\n  108  			{\n  109  				message = Messenger::receiveMessage(socket); \n  110: 				std::cout << \"Received a message\" << std::endl;\n  111  			}\n  112  			catch(MY_EXCEPTION e)\n  ...\n  114  				if(e == DISCONNECTION_ERROR)\n  115  				{\n  116: 					std::cout << serverInfo->address <<\":\"<<serverInfo->port<< \" disconnected.\" << std::endl;\n  117  					removeServer(serverInfo);\n  118  					finished = true;\n  ...\n  155  	if(it == database.end())\n  156  	{\n  157: 		std::cout << \"Couldn't find function \" << sig.name <<\" with those args.\" << std::endl;\n  158  		Message msg(LOC_FAILURE, BINDER_FUNCTION_NOT_FOUND);\n  159  		Messenger::sendMessage(socket, &msg);\n  ...\n  161  	else\n  162  	{\n  163: 		std::cout << \"Performed lookup for function \" << sig.name << std::endl;\n  164  		//TODO Round Robin goes here\n  165  		ServerInfo *server = getMostStaleServer(it->second);\n  ...\n  178  	IncomingSocketManager::printSocketInfo(listeningSocket);\n  179  \n  180: 	std::cout << \"Listening for connections.\" << std::endl;\n  181  \n  182  	//Should start THIS into new thread, have another loop to keep accepting\n  ...\n  186  		if (incomingSocket == -1)\n  187  		{\n  188: 			std::cout << \"Error: Couldn't accepting a connection. Continuing..\" << std::endl;\n  189  			continue;\n  190  		}\n  191  \n  192: 		std::cout << \"Accepted new connection.\" << std::endl;\n  193  \n  194  		Message *msg = Messenger::receiveMessage(incomingSocket);\n  195  		\n  196: 		std::cout << \"Received a message.\" << std::endl;\n  197  \n  198  		switch(msg->type)\n  199  		{\n  200  			case REGISTER:\n  201: 				std::cout << \"Starting a server thread.\" << std::endl;\n  202  				startServerThread(msg, incomingSocket);\n  203  				break;\n  ...\n  206  				break;\n  207  			case TERMINATE:\n  208: 				std::cout << \"Received termination request.\" << std::endl;\n  209  				terminateServers();\n  210  				break;\n  211  			default:\n  212: 				std::cout << \"This shouldn't happen. Got connection with invalid command\" << std::endl;\n  213  				exit(1);\n  214  		}\n\n/Users/lawson/Workspace/CS454/A3/IncomingSocketManager.cpp:\n   27  void IncomingSocketManager::printSocketInfo(int listeningSocket)\n   28  {\n   29:    std::cout << \"BINDER_ADDRESS \" << getAddress() << std::endl;\n   30:    std::cout << \"BINDER_PORT \" << getPort(listeningSocket) << std::endl;\n   31  }\n   32  \n\n/Users/lawson/Workspace/CS454/A3/Message.cpp:\n  243  \n  244  		default:\n  245: 			std::cout << \"Error: Invalid message type: \" << type << std::endl;\n  246  			exit(1);\n  247  	}\n  ...\n  412  \n  413  		default:\n  414: 			std::cout << \"Received unknown message\" << std::endl;\n  415  			exit(1);\n  416  	}\n\n/Users/lawson/Workspace/CS454/A3/messageTests.cpp:\n   40  	for(int i = 0; i < len; i++)\n   41  	{\n   42: 		std::cout << array[i] << \", \";\n   43  	}\n   44: 	std::cout << std::endl;\n   45  }\n   46  \n   ..\n   73  	assert(compareArrays(argTypes, newMsg->argTypes, len) == 0);\n   74  \n   75: 	std::cout << \"REGISTER: PASS\" << std::endl;\n   76  \n   77  	delete newMsg;\n   ..\n   93  	assert(reasonCode == newMsg->reasonCode);\n   94  \n   95: 	std::cout << \"REGISTER_SUCCESS: PASS\" << std::endl;\n   96  \n   97  	delete newMsg;\n   ..\n  113  	assert(reasonCode == newMsg->reasonCode);\n  114  \n  115: 	std::cout << \"REGISTER_FAILURE: PASS\" << std::endl;\n  116  \n  117  	delete newMsg;\n  ...\n  134  	assert(compareArrays(argTypes, newMsg->argTypes, len) == 0);\n  135  \n  136: 	std::cout << \"LOC_REQUEST: PASS\" << std::endl;\n  137  \n  138  	delete newMsg;\n  ...\n  155  	assert(port == newMsg->port);\n  156  \n  157: 	std::cout << \"LOC_SUCCESS: PASS\" << std::endl;\n  158  \n  159  	delete newMsg;\n  ...\n  175  	assert(reasonCode == newMsg->reasonCode);\n  176  \n  177: 	std::cout << \"LOC_FAILURE: PASS\" << std::endl;\n  178  \n  179  	delete newMsg;\n  ...\n  194  	assert(type == newMsg->type);\n  195  \n  196: 	std::cout << \"TERMINATE: PASS\" << std::endl;\n  197  \n  198  	delete newMsg;\n\n/Users/lawson/Workspace/CS454/A3/MyExceptions.h:\n   22  inline int printException(int e)\n   23  {\n   24: 	std::cout << \"Error: \" << e << std::endl;\n   25  	return e;\n   26  }\n   ..\n   28  inline int printException(int e, std::string msg)\n   29  {\n   30: 	std::cout << \"[\" << msg << \"] \" << \"Error: \" << e << std::endl;\n   31  	return e;\n   32  }\n\n/Users/lawson/Workspace/CS454/A3/rpc.cpp:\n   39  	lookupBinder(binderAddress, binderPort);\n   40  	\n   41: 	std::cout << \"Connecting to the binder at \" << binderAddress << \":\" << binderPort << std::endl;\n   42  	//Connect to the binder\n   43  	binderSocket = OutgoingSocketManager::connectTo(binderAddress, binderPort);\n   44  \n   45: 	std::cout << \"Requesting location of function \" << name << std::endl;\n   46  	//Get function location\n   47  	Message request(LOC_REQUEST, name, argTypes);\n   ..\n   53  	{\n   54  		info = ServerInfo(response->serverIdentifier, response->port);\n   55: 		std::cout << \"Found function \" << name << \" at \" << info.address <<\":\"<<info.port<< std::endl;\n   56  	}\n   57  	else if(response->type == LOC_FAILURE)\n   58  	{\n   59: 		std::cout << \"Binder could not locate \" << name << std::endl;\n   60  		throw (MY_EXCEPTION)response->reasonCode;\n   61  	}\n   ..\n   86  int executeOnServer(ServerInfo info, char *name, int *argTypes, void **args)\n   87  {\n   88: 	std::cout << \"Connecting to server.\" << std::endl;\n   89  	int serverSocket = OutgoingSocketManager::connectTo(info.address, info.port);\n   90  \n   91: 	std::cout << \"Connected to server. Sending Message.\" << std::endl;\n   92  	Message request(EXECUTE, name, argTypes, args);\n   93  	Messenger::sendMessage(serverSocket, &request);\n   94: 	std::cout << \"Waiting for response.\" << std::endl;\n   95  	Message *response = Messenger::receiveMessage(serverSocket);\n   96  \n   ..\n  114  	try\n  115  	{\n  116: 		std::cout << \"Looking up binder location.\" << std::endl;\n  117  		ServerInfo info = lookupServerInfo(name, argTypes);\n  118  		\n  119: 		std::cout << \"Sending rpc request to server at \" << info.address <<\":\"<< info.port << std::endl;\n  120  		return executeOnServer(info, name, argTypes, args);\n  121  	}\n\n/Users/lawson/Workspace/CS454/A3/RPCServer.cpp:\n   44  	serverPort = IncomingSocketManager::getPort(listening_server_socket);\n   45  	\n   46: 	std::cout << \"Server connected to Binder.\" << std::endl;\n   47  \n   48  	return 0;\n   ..\n   70  	fcnDatabase[sig] = f;\n   71  \n   72: 	std::cout << \"Now have \" << fcnDatabase.size() << \" functions registered locally.\" << std::endl;\n   73  	try\n   74  	{\n   ..\n   80  		if(response->type == REGISTER_FAILURE)\n   81  		{\n   82: 			std::cout << \"Register failed: \" << response->reasonCode << std::endl;\n   83  		}\n   84  		else if(response->type == REGISTER_SUCCESS)\n   85  		{\n   86: 			std::cout << \"Server registered \"<< name << \"@\" << serverAddress << \":\" << serverPort << \" with binder.\" << std::endl;\n   87  		}\n   88  		else\n   ..\n  109  		if(msg->type == TERMINATE)\n  110  		{\n  111: 			std::cout << \"Received TERMINATE message. Quitting.\" << std::endl;\n  112  			exit(0);\n  113  		}\n  ...\n  116  	{\n  117  	}\n  118: 	std::cout << \"Binder disconnected. Quitting.\" << std::endl;\n  119  	exit(0);\n  120  }\n  ...\n  146  	while(1)\n  147  	{\n  148: 		std::cout << \"Waiting for connection from client.\" << std::endl;\n  149  		int clientSocket = IncomingSocketManager::acceptConnection(listening_server_socket);\n  150: 		std::cout << \"Received a connection. Starting thread.\" << std::endl;\n  151  		std::thread t(&RPCServer::handleConnectionThread, this, clientSocket);\n  152  		threads.push_back(std::move(t));\n  ...\n  158  void RPCServer::handleConnectionThread(int clientSocket)\n  159  {\n  160: 	std::cout << \"Thread started.\" << std::endl;\n  161  	const char* name;\n  162  	int* arg_types;\n  ...\n  164  	try\n  165  	{\n  166: 		std::cout << \"Receiving message.\" << std::endl;\n  167  		msg = Messenger::receiveMessage(clientSocket);\n  168  \n  ...\n  183  	if(it == fcnDatabase.end())\n  184  	{\n  185: 		std::cout << \"Couldn't find function \" << name << std::endl;\n  186  		msg_to_client = Message(EXECUTE_FAILURE, SERVER_FUNCTION_NOT_FOUND);\n  187  	}\n  ...\n  189  	{\n  190  		skeleton f = it->second;\n  191: 		std::cout << \"Executing function \" << name << std::endl;\n  192  		int res = f(arg_types, msg->args);\n  193  		if(res == 0)\n  ...\n  200  	}\n  201  \n  202: 	std::cout << \"Sending response.\" << std::endl;\n  203  	Messenger::sendMessage(clientSocket, &msg_to_client);\n  204  \n  205: 	std::cout << \"Ending thread. Parent should be waiting.\" << std::endl;\n  206  }\n  207  \n\n/Users/lawson/Workspace/CS454/A3/test2.cpp:\n   13  	auto elapsed = end - start;\n   14  \n   15: 	std::cout << (end < start) << std::endl;\n   16  \n   17  	return 0;\n\n/Users/lawson/Workspace/CS454/A3/tests.cpp:\n   54  	argTypes3[1] = 0;\n   55  \n   56: 	std::cout << Message::getArgDataType(argTypes3[0]) << std::endl;\n   57: 	std::cout << Message::getArgIOType(argTypes3[0]) << std::endl;\n   58: 	std::cout << Message::getArgArrayLength(argTypes3[0]) << std::endl;\n   59  \n   60  	/* same here, 28 is the exact length of the parameter */\n   ..\n   78  	 db[f5] = ServerInfo(\"s\",5); // Need to fix this, should be diff.\n   79  \n   80: 	//std::cout << (f2 < f5) << std::endl;\n   81: 	//std::cout << (f5 < f2) << std::endl;\n   82  \n   83: 	//std::cout << \"size: \" <<db.size() << std::endl;\n   84: 	//std::cout << db[FunctionSignature(\"f2\",argTypes2)].port << std::endl;\n   85  \n   86  	\n\n64 matches across 9 files\n\n\nSearching 24 files for \"looking up\" (regex)\n\n/Users/lawson/Workspace/CS454/A3/rpc.cpp:\n  114  	try\n  115  	{\n  116: 		//std::cout << \"Looking up binder location.\" << std::endl;\n  117  		ServerInfo info = lookupServerInfo(name, argTypes);\n  118  		\n\n1 match in 1 file\n\n\nSearching 24 files for \"perror\" (regex)\n\n/Users/lawson/Workspace/CS454/A3/helperFcns.h:\n   12  \n   13  #define handle_error(msg) \\\n   14:     do { perror(msg); exit(EXIT_FAILURE); } while (0)\n   15  \n   16  \n\n/Users/lawson/Workspace/CS454/A3/IncomingSocketManager.cpp:\n   38     if(incoming_socketfd == -1)\n   39     {\n   40:       perror(\"accept\");\n   41        throw CONNECTION_ERROR;\n   42     }\n\n/Users/lawson/Workspace/CS454/A3/OutgoingSocketManager.cpp:\n   29      if(connect(sockfd, servinfo->ai_addr, servinfo->ai_addrlen) == -1)\n   30      {\n   31:         perror(\"connect\");\n   32          throw CONNECTION_ERROR;\n   33      }\n\n3 matches across 3 files\n\n\nSearching 23 files for \"UNKNOWN_HOST_ERROR\" (regex)\n\n/Users/lawson/Workspace/CS454/A3/MyExceptions.h:\n   11  	RECEIVE_BODY_ERROR = -4,\n   12  	SEND_ERROR = -5,\n   13: 	UNKNOWN_HOST_ERROR = -6,\n   14  	SOCKET_ERROR = -7,\n   15  	DISCONNECTION_ERROR = -8,\n\n/Users/lawson/Workspace/CS454/A3/OutgoingSocketManager.cpp:\n   19  \n   20      if (getaddrinfo(address, port, &hints, &servinfo) != 0)\n   21:         throw UNKNOWN_HOST_ERROR;\n   22  \n   23      //Create the socket for connecting to the server\n\n2 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 12149,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "OutgoingSocketManager.cpp",
+			"settings":
+			{
+				"buffer_size": 1097,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "RPCServer.cpp",
+			"settings":
+			{
+				"buffer_size": 6396,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "IncomingSocketManager.cpp",
+			"settings":
+			{
+				"buffer_size": 1791,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client1.c",
+			"settings":
+			{
+				"buffer_size": 4229,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#include \"Binder.h\"\n#include \"Message.h\"\n#include \"Messenger.h\"\n#include \"IncomingSocketManager.h\"\n#include \"MyExceptions.h\"\n\n#include <iostream>\n\nint Binder::registerServerFunction(FunctionSignature sig, ServerInfo *info)\n{ \n	std::lock_guard<std::mutex> guard(dbMutex);\n	database[sig].insert(info);\n\n	std::cout << \"Registered function \" << sig.name << \" from \" << info->address << \":\" << info->port << std::endl;\n	return 0;\n}\n\nvoid Binder::removeServer(ServerInfo *info)\n{\n	std::lock_guard<std::mutex> guard(dbMutex);\n\n	for(auto iter=database.begin(); iter!=database.end();)\n	{\n		int i = iter->second.erase(info);\n		if(i > 0)\n			std::cout << \"Erased \" << iter->first.name << \" for \" << info->address <<\":\" << info->port << std::endl;\n\n		if(iter->second.empty())\n		{\n			std::cout << \"Erased \" << iter->first.name << \" completely from the database\" << std::endl;\n			database.erase(iter++);\n		}\n		else\n		{\n			++iter;\n		}\n	}\n\n	servers.erase(*info);\n}\n\nvoid Binder::terminateServers()\n{\n	//Send to all sockets, catch exception if socket is already down\n	//because im not going to remove it from th array\n}\n\n\nvoid Binder::startServerThread(Message *msg, int socket)\n{\n	std::thread t(&Binder::handleServerConnection, this, msg, socket);\n	serverThreads.push_back(std::move(t));\n	serverSockets.push_back(socket);\n}\n\nvoid Binder::handleServerConnection(Message *_msg, int socket)\n{\n	Message *message = _msg;\n	bool finished = false;\n\n	//Info of the connected server\n	serversMutex.lock();\n	ServerInfo *serverInfo = new ServerInfo(message->serverIdentifier, message->port);\n	\n	if(servers.count(*serverInfo) > 0)\n	{\n		std::cout << \"Found pre-existing server.\" << std::endl;\n		serverInfo = servers[*serverInfo];\n	}\n	else\n	{\n		std::cout << \"New server registering.\" << std::endl;\n		servers[*serverInfo] = serverInfo;\n	}\n	serversMutex.unlock();\n\n	std::cout << \"Started server thread.\" << std::endl;\n\n	do\n	{\n		if(message->type == REGISTER)\n		{\n			FunctionSignature sig(message->name, message->argTypes);\n			int result = registerServerFunction(sig, serverInfo);\n\n			std::cout << \"Sending response.\" << std::endl;\n			Message response(REGISTER_SUCCESS, result);\n			try\n			{\n				Messenger::sendMessage(socket, &response);\n			} catch(MY_EXCEPTION e)\n			{\n				printException(e, \"Binder::handleServerConnection\");\n			}\n		}\n		else\n		{\n			throw UNEXPECTED_MESSAGE_ERROR;\n		}\n\n		std::cout << \"Waiting for next message.\" << std::endl;\n\n		//Keep waiting to hear from the server\n		//delete message; //TODO why isnt this working??\n		if(!finished)\n		{\n			try\n			{\n				message = Messenger::receiveMessage(socket); \n				std::cout << \"Received a message\" << std::endl;\n			}\n			catch(MY_EXCEPTION e)\n			{\n				if(e == DISCONNECTION_ERROR)\n				{\n					std::cout << serverInfo->address <<\":\"<<serverInfo->port<< \" disconnected.\" << std::endl;\n					removeServer(serverInfo);\n					finished = true;\n				} else\n				{\n					printException(e, \"Binder::handleServerConnection\");\n					finished = true;\n				}\n			}\n		}\n	} while(!finished);\n}\n\nvoid Binder::sendLookupResponse(Message *msg, int socket)\n{\n	std::lock_guard<std::mutex> guard(dbMutex);\n\n	FunctionSignature sig(msg->name, msg->argTypes);\n\n	auto it = database.find(sig);\n	if(it == database.end())\n	{\n		std::cout << \"Couldn't find function \" << sig.name <<\" with those args.\" << std::endl;\n		Message msg(LOC_FAILURE, BINDER_FUNCTION_NOT_FOUND);\n		Messenger::sendMessage(socket, &msg);\n	}\n	else\n	{\n		std::cout << \"Performed lookup for function \" << sig.name << std::endl;\n		//TODO Round Robin goes here\n		auto info = it->second.begin();\n		Message msg(LOC_SUCCESS, (*info)->address, (*info)->port);\n		Messenger::sendMessage(socket, &msg);\n	}\n}\n\n\nint Binder::run()\n{\n	try\n	{\n	listeningSocket = IncomingSocketManager::createWelcomeSocket();\n	IncomingSocketManager::printSocketInfo(listeningSocket);\n\n	std::cout << \"Listening for connections.\" << std::endl;\n\n	//Should start THIS into new thread, have another loop to keep accepting\n	while(true)\n	{\n		int incomingSocket = IncomingSocketManager::acceptConnection(listeningSocket);\n		if (incomingSocket == -1)\n		{\n			std::cout << \"Error: Couldn't accepting a connection. Continuing..\" << std::endl;\n			continue;\n		}\n\n		std::cout << \"Accepted new connection.\" << std::endl;\n\n		Message *msg = Messenger::receiveMessage(incomingSocket);\n		\n		std::cout << \"Received a message.\" << std::endl;\n\n		switch(msg->type)\n		{\n			case REGISTER:\n				std::cout << \"Starting a server thread.\" << std::endl;\n				startServerThread(msg, incomingSocket);\n				break;\n			case LOC_REQUEST: \n				sendLookupResponse(msg, incomingSocket);\n				break;\n			case TERMINATE:\n				std::cout << \"Received termination request.\" << std::endl;\n				terminateServers();\n				break;\n			default:\n				std::cout << \"This shouldn't happen. Got connection with invalid command\" << std::endl;\n				exit(1);\n		}\n\n		delete msg;\n	}\n	}\n	catch(MY_EXCEPTION e)\n	{\n		return printException(e);\n	}\n\n	//join all threads\n\n	return 0;\n}\n\n\n\n\n",
+			"settings":
+			{
+				"buffer_size": 4929,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server_function_skels.c",
+			"settings":
+			{
+				"buffer_size": 951,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server_functions.c",
+			"settings":
+			{
+				"buffer_size": 1093,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TODO.txt",
+			"settings":
+			{
+				"buffer_size": 2540,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rpc.h",
+			"settings":
+			{
+				"buffer_size": 631,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Binder.cpp",
+			"settings":
+			{
+				"buffer_size": 5348,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/lawson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "RPCServer.h",
+			"settings":
+			{
+				"buffer_size": 697,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Database.h",
+			"settings":
+			{
+				"buffer_size": 660,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Database.cpp",
+			"settings":
+			{
+				"buffer_size": 2103,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests.cpp",
+			"settings":
+			{
+				"buffer_size": 2598,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test2.cpp",
+			"settings":
+			{
+				"buffer_size": 315,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Binder.h",
+			"settings":
+			{
+				"buffer_size": 854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/lawson/Workspace/CS456/A2/sender.java",
+			"settings":
+			{
+				"buffer_size": 7470,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server.c",
+			"settings":
+			{
+				"buffer_size": 2163,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"clang",
+				"Set Syntax: SublimeClangErrorPanel"
+			],
+			[
+				"clan",
+				"Set Syntax: SublimeClangErrorPanel"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 502.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"\\",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/lawson/Workspace/CS454/A3/Messenger.h",
+		"/Users/lawson/Workspace/CS454/A3/Messenger.cpp",
+		"/Users/lawson/Workspace/CS454/A3/messageTests",
+		"/Users/lawson/Workspace/CS454/A3/Message.h",
+		"/Users/lawson/Workspace/CS454/A3/makefile_old",
+		"/Users/lawson/Workspace/CS454/A3/Binder.h",
+		"/Users/lawson/Workspace/CS454/A3/RPCServer.cpp",
+		"/Users/lawson/Workspace/CS454/A3/messageTests.cpp",
+		"/Users/lawson/Workspace/CS454/A3/rpc.cpp",
+		"/Users/lawson/Workspace/CS454/A3/rpc.h",
+		"/Users/lawson/Workspace/CS454/A3/Database.cpp",
+		"/Users/lawson/Workspace/CS454/A3/Binder.cpp",
+		"/Users/lawson/Workspace/CS454/A3/Message.cpp",
+		"/Users/lawson/Workspace/CS454/A3/client1.c",
+		"/Users/lawson/Workspace/CS454/A3/server.c",
+		"/Users/lawson/Workspace/CS454/A3/Database.h",
+		"/Users/lawson/Workspace/CS454/A3/TODO.txt",
+		"/Users/lawson/Workspace/CS454/A3/server_functions.h",
+		"/Users/lawson/Workspace/CS454/A3/server_functions.c",
+		"/Users/lawson/Workspace/CS454/A3/server",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/lawson/Workspace/CS454/A3/tests.cpp",
+		"/Users/lawson/Workspace/CS454/A3/RPCServer.h",
+		"/Users/lawson/Workspace/CS454/A3/MyExceptions.h",
+		"/Users/lawson/Workspace/CS454/A3/binder",
+		"/Users/lawson/Workspace/CS454/A3/OutgoingSocketManager.h",
+		"/Users/lawson/Workspace/CS454/A3/makefile",
+		"/Users/lawson/Workspace/CS454/A3/IncomingSocketManager.h",
+		"/Users/lawson/Workspace/CS454/A3/client",
+		"/Users/lawson/Workspace/CS454/A3/OutgoingSocketManager.cpp",
+		"/Users/lawson/Workspace/CS454/A3/Archive/client1.c",
+		"/Users/lawson/Workspace/CS454/A3/client1",
+		"/Users/lawson/Workspace/CS454/A3/IncomingSocketManager.cpp",
+		"/Users/lawson/Workspace/CS454/A3/A3.sublime-project",
+		"/Users/lawson/Workspace/CS454/A3/BinderMain.cpp",
+		"/Users/lawson/Workspace/CS454/A3/server_function_skels.c",
+		"/Users/lawson/Workspace/CS454/A2/helperFcns.h",
+		"/Users/lawson/Workspace/CS454/A3/rpc 2.h",
+		"/Users/lawson/Workspace/CS454/A3/server_function_skels.h",
+		"/Users/lawson/Workspace/CS454/A3/helperFcns.h",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/lawson/Workspace/CS454/A3/.depend",
+		"/Users/lawson/Workspace/CS454/A3/test",
+		"/Users/lawson/Workspace/CS454/A3/Server.cpp",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/User/cout_snippet.sublime-snippet",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/lawson/Workspace/CS454/A2/stringServer.cpp",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/usr/include/string.h",
+		"/Users/lawson/Workspace/CS454/A2/ideas.cpp",
+		"/Users/lawson/Workspace/CS454/A3/Server.h",
+		"/Users/lawson/Workspace/CS454/A2/stringClient.cpp",
+		"/Users/lawson/Google Drive/School/CS 454/A3/makefile",
+		"/Users/lawson/Google Drive/School/CS 454/A3/Server.cpp",
+		"/Users/lawson/Google Drive/School/CS 454/A3/Server.h",
+		"/Users/lawson/Google Drive/School/CS 454/A3/Binder.h",
+		"/Users/lawson/Google Drive/School/CS 454/A3/Binder.cpp",
+		"/Users/lawson/Workspace/CS454/A2/makefile",
+		"/Users/lawson/Workspace/CS454/A2/SharedQueue.cpp",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/User/myC++.sublime-build",
+		"/Users/lawson/Workspace/CS454/A2/stringServer",
+		"/Users/lawson/Workspace/CS454/A2/stringClient",
+		"/Users/lawson/Workspace/CS454/A2/A2.sublime-project",
+		"/Users/lawson/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/lawson/Workspace/CS454/A3,*.cpp,*.h",
+			"/Users/lawson/Library/Application Support/Sublime Text 3/*",
+			"/Users/lawson/Workspace/CS454/A3/,*.cpp,*.h",
+			"/Users/lawson/Workspace/CS454/A3/,*.cpp",
+			"/Users/lawson/Workspace/CS454/A3/*.cpp",
+			"/Users/lawson/Workspace/CS454/A3/*",
+			"/Users/lawson/Workspace/CS454/A3"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"UNKNOWN_HOST_ERROR",
+			"perror",
+			"looking up",
+			"std::cout",
+			"std",
+			"cout",
+			"serverSockets",
+			"Clock",
+			"cout",
+			"size",
+			"case",
+			"sizeof",
+			"break",
+			"dest",
+			"seri",
+			"char",
+			"case",
+			"^(.*)$",
+			"sock_fd",
+			"port",
+			"addr",
+			"robin",
+			"req",
+			"map",
+			"outer_iter",
+			"t2",
+			"calcArgsLength",
+			"server_address",
+			"sockfd",
+			"calcArgsLength",
+			")\n",
+			"sendMessage",
+			"group",
+			"next",
+			"printSocketInfo",
+			"hostname",
+			"rpcInit",
+			"BINDER_OBJS",
+			"RPC",
+			"OBJS",
+			"BNDRSRCS",
+			"SRCS",
+			"IncomingSocketManager",
+			"MessageListener",
+			"MESSAGELISTENER_H",
+			"MESSAGE_SENDER_H",
+			"REGISTER_FAILURE",
+			"REGISTER",
+			"LOC_REQUEST",
+			"REGISTER_SUCCESS",
+			"vector",
+			"*.sublime-snippet",
+			"acceptConnection",
+			"^(.*)$",
+			"sockfd",
+			"bindListeningSocket",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"Binder",
+			"    ",
+			"tool",
+			"readArgTypes",
+			"readServerIdentifier",
+			"char",
+			"msg",
+			"type",
+			" :",
+			"serializePort",
+			"msgData",
+			"data",
+			"endl",
+			"cout",
+			"memcpy",
+			"cahr",
+			"data",
+			"client_addr",
+			"my_addr",
+			"BINDER",
+			"client_addr",
+			"incoming_socketfd",
+			"max_sd",
+			"readfds",
+			"addrlen",
+			"incoming_socketfd",
+			"new_socket",
+			"addrlen",
+			"master_socket",
+			"opt",
+			"cout",
+			"incoming_socketfd",
+			"msg_len",
+			"buf",
+			"s",
+			"msg_len",
+			"get_address_and_port",
+			"new_fd",
+			"sockfd",
+			"their_addr",
+			"channel",
+			"sa",
+			"clientInformation",
+			"new_fd",
+			"\");\n",
+			"their_addr",
+			"res",
+			"socket",
+			"res",
+			"    \n",
+			"res",
+			"\n    ",
+			"    /*",
+			"res->"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"servinfo->"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "MyExceptions.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								412,
+								412
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "rpc.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								418,
+								418
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Message.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6738,
+								6738
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "README",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "Group Members:",
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "submit/SystemManual.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "System Manual",
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12149,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										141,
+										145
+									],
+									[
+										358,
+										362
+									],
+									[
+										526,
+										530
+									],
+									[
+										695,
+										699
+									],
+									[
+										901,
+										905
+									],
+									[
+										1060,
+										1064
+									],
+									[
+										1209,
+										1213
+									],
+									[
+										1406,
+										1410
+									],
+									[
+										1569,
+										1573
+									],
+									[
+										1784,
+										1788
+									],
+									[
+										2018,
+										2022
+									],
+									[
+										2277,
+										2281
+									],
+									[
+										2484,
+										2488
+									],
+									[
+										2614,
+										2618
+									],
+									[
+										2762,
+										2766
+									],
+									[
+										2893,
+										2897
+									],
+									[
+										3078,
+										3082
+									],
+									[
+										3216,
+										3220
+									],
+									[
+										3487,
+										3491
+									],
+									[
+										3558,
+										3562
+									],
+									[
+										3728,
+										3732
+									],
+									[
+										3866,
+										3870
+									],
+									[
+										4057,
+										4061
+									],
+									[
+										4106,
+										4110
+									],
+									[
+										4238,
+										4242
+									],
+									[
+										4385,
+										4389
+									],
+									[
+										4540,
+										4544
+									],
+									[
+										4714,
+										4718
+									],
+									[
+										4852,
+										4856
+									],
+									[
+										5002,
+										5006
+									],
+									[
+										5140,
+										5144
+									],
+									[
+										5323,
+										5327
+									],
+									[
+										5472,
+										5476
+									],
+									[
+										5672,
+										5676
+									],
+									[
+										5900,
+										5904
+									],
+									[
+										6153,
+										6157
+									],
+									[
+										6324,
+										6328
+									],
+									[
+										6554,
+										6558
+									],
+									[
+										6707,
+										6711
+									],
+									[
+										6894,
+										6898
+									],
+									[
+										7059,
+										7063
+									],
+									[
+										7196,
+										7200
+									],
+									[
+										7508,
+										7512
+									],
+									[
+										7643,
+										7647
+									],
+									[
+										7837,
+										7841
+									],
+									[
+										7993,
+										7997
+									],
+									[
+										8200,
+										8204
+									],
+									[
+										8331,
+										8335
+									],
+									[
+										8459,
+										8463
+									],
+									[
+										8627,
+										8631
+									],
+									[
+										8905,
+										8909
+									],
+									[
+										9037,
+										9041
+									],
+									[
+										9210,
+										9214
+									],
+									[
+										9418,
+										9422
+									],
+									[
+										9573,
+										9577
+									],
+									[
+										9698,
+										9702
+									],
+									[
+										9882,
+										9886
+									],
+									[
+										10036,
+										10040
+									],
+									[
+										10109,
+										10113
+									],
+									[
+										10180,
+										10184
+									],
+									[
+										10419,
+										10423
+									],
+									[
+										10466,
+										10470
+									],
+									[
+										10521,
+										10525
+									],
+									[
+										10579,
+										10583
+									],
+									[
+										10824,
+										10834
+									],
+									[
+										11106,
+										11112
+									],
+									[
+										11291,
+										11297
+									],
+									[
+										11525,
+										11531
+									],
+									[
+										11792,
+										11810
+									],
+									[
+										12035,
+										12053
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								12040,
+								12040
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 4,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "OutgoingSocketManager.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								899,
+								899
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "RPCServer.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6163,
+								6163
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2339.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "IncomingSocketManager.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1042,
+								1042
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 279.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "client1.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 182.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4929
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2269.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "server_function_skels.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								171
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "server_functions.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 28.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "TODO.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "rpc.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Binder.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4414,
+								4414
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2535.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/Users/lawson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "RPCServer.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "Database.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								474
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "Database.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "tests.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2598
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "test2.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "MyExceptions.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								231,
+								231
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Message.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8253,
+								8253
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5457.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "Binder.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Binder.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3093,
+								3093
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "Database.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								490,
+								490
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "RPCServer.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								969,
+								914
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/Users/lawson/Workspace/CS456/A2/sender.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 532.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "client1.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3059,
+								3059
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "server.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clang":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 152.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "A3.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ser",
+				"server.c"
+			],
+			[
+				"m",
+				"MyExceptions.h"
+			],
+			[
+				"my",
+				"MyExceptions.h"
+			],
+			[
+				"bin",
+				"Binder.cpp"
+			],
+			[
+				"rpc",
+				"RPCServer.cpp"
+			],
+			[
+				"cli",
+				"client1.c"
+			],
+			[
+				"rpc.",
+				"rpc.cpp"
+			],
+			[
+				"mak",
+				"makefile"
+			],
+			[
+				"mes",
+				"Message.cpp"
+			],
+			[
+				"rp",
+				"RPCServer.h"
+			],
+			[
+				"da",
+				"Database.h"
+			],
+			[
+				"d",
+				"Database.cpp"
+			],
+			[
+				"tes",
+				"tests.cpp"
+			],
+			[
+				"bi",
+				"Binder.cpp"
+			],
+			[
+				"cl",
+				"client1.c"
+			],
+			[
+				"to",
+				"TODO.txt"
+			],
+			[
+				"serv",
+				"server_functions.c"
+			],
+			[
+				"func",
+				"server_function_skels.c"
+			],
+			[
+				"",
+				"Message.cpp"
+			],
+			[
+				"me",
+				"Message.h"
+			],
+			[
+				"rpc.h",
+				"rpc.h"
+			],
+			[
+				"binde",
+				"Binder.cpp"
+			],
+			[
+				"clie",
+				"client1"
+			],
+			[
+				"ou",
+				"OutgoingSocketManager.h"
+			],
+			[
+				"e",
+				"MyExceptions.h"
+			],
+			[
+				"r",
+				"RPCServer.cpp"
+			],
+			[
+				"i",
+				"IncomingSocketManager.h"
+			],
+			[
+				"ex",
+				"MyExceptions.h"
+			],
+			[
+				"b",
+				"Binder.h"
+			],
+			[
+				"mess",
+				"Message.cpp"
+			],
+			[
+				"tod",
+				"TODO.txt"
+			],
+			[
+				"incom",
+				"IncomingSocketManager.h"
+			],
+			[
+				"out",
+				"OutgoingSocketManager.cpp"
+			],
+			[
+				"in",
+				"IncomingSocketManager.cpp"
+			],
+			[
+				"ol",
+				"makefile_old"
+			],
+			[
+				"inco",
+				"IncomingSocketManager.h"
+			],
+			[
+				"dat",
+				"Database.cpp"
+			],
+			[
+				"make",
+				"makefile"
+			],
+			[
+				"tot",
+				"TODO.txt"
+			],
+			[
+				"hel",
+				"~/Workspace/CS454/A2/helperFcns.h"
+			],
+			[
+				"mye",
+				"MyExceptions.h"
+			],
+			[
+				"t",
+				"TODO.txt"
+			],
+			[
+				"inc",
+				"IncomingSocketManager.h"
+			],
+			[
+				"ma",
+				"makefile"
+			],
+			[
+				"he",
+				"helperFcns.h"
+			],
+			[
+				"sh",
+				"SharedQueue.cpp"
+			],
+			[
+				"str",
+				"stringServer.cpp"
+			],
+			[
+				"st",
+				"stringClient.cpp"
+			],
+			[
+				"stri",
+				"stringServer.cpp"
+			],
+			[
+				"se",
+				"stringServer"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Workspace/CS456/A2/A2.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

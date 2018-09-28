@@ -1,0 +1,7 @@
+./nEmulator-linux386 11111 ubuntu1204-002 22222 33333 ubuntu1204-006 44444 150 0.1 1
+
+java receiver ubuntu1204-004 33333 22222 out.txt
+
+java sender ubuntu1204-004 11111 44444 This\ is\ a\ test.txt
+
+//Need to resend EOT in case it doesn't get ACKed

@@ -1,0 +1,24 @@
+How to Build:
+    $make
+
+How to Run on Host 1:
+    $./nEmulator <emulator sender port> <receiver’s network address> <receiver port> <emulator receiver port> <sender’s networkaddress> <senders port> <max delay> <discard probability> <verbose-mode>
+
+How To Run on Host 2:
+    $java receiver <network emulator address> <emulator receiver port>, <receiver port> <output file name>
+
+How To Run on Host 3:
+    $java sender <network emulator address> <emulator sender port> <sender port> <file to be transmitted>
+
+Example:
+    host1$ ./nEmulator-linux386 8080 host2 8081 8082 host3 8083 50 0.05 1
+
+    host2$ java receiver host1 8082 8081 out.txt
+    
+    host3$ java sender host1 8080 8083 in.txt
+
+Tested Using:
+    GNU Make version 3.81
+    javac version 1.6.0_27
+    java version 1.6.0_27
+    Undergrad Environment machines: ubuntu1204-002, ubuntu1204-004, ubuntu1204-006

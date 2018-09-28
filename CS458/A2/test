@@ -1,0 +1,59 @@
+#!/bin/bash
+
+echo "Running tests..."
+
+echo "Testing atk1-spoofed..."
+
+# if [[ -n $(./ids < examples/atk1-spoofed.log | diff - examples/atk1-spoofed-output.log) ]]; then
+#     echo "***********Failed***********"
+# else
+#     echo "Passed."
+# fi
+
+# echo "Testing atk2-servers..."
+# if [[ -n $(./ids < examples/atk2-servers.log | diff - examples/atk2-servers-output.log) ]]; then
+#     echo "***********Failed***********"
+# else
+#     echo "Passed."
+# fi
+
+# echo "Testing atk3-hosts..."
+# if [[ -n $(./ids < examples/atk3-hosts.log | diff - examples/atk3-hosts-output.log) ]]; then
+#     echo "***********Failed***********"
+# else
+#     echo "Passed."
+# fi
+
+# echo "Testing atk4-scan-tcp..."
+# echo ""
+# if [[ -n $(./ids < examples/atk4-scan-tcp.log | diff - examples/atk4-scan-output.log) ]]; then
+#     echo "***********Failed***********"
+# else
+#     echo "Passed."
+# fi
+
+# echo "Testing atk4-scan-udp..."
+# echo ""
+# if [[ -n $(./ids < examples/atk4-scan-udp.log | diff - examples/atk4-scan-output.log) ]]; then
+#     echo "***********Failed***********"
+# else
+#     echo "Passed."
+# fi
+
+echo "Testing atk5-codered..."
+echo ""
+if [[ -n $(./ids < examples/atk5-codered.log | diff - examples/atk5-codered-output.log) ]]; then
+    echo "***********Failed***********"
+else
+    echo "Passed."
+fi
+
+# echo "Testing atk6-conficker-output..."
+# echo ""
+# if [[ -n $(./ids < examples/atk6-conficker-output.log) ]]; then
+#     echo "***********Failed***********"
+# else
+#     echo "Passed."
+# fi
+
+echo "Finished all tests."

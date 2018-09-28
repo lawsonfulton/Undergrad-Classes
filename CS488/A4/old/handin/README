@@ -1,0 +1,24 @@
+Name: Lawson Fulton
+Student Number: 20381453
+User-id: ljfulton
+Assignment: A3
+
+The final executable was compiled on this machine: gl23
+
+How to invoke my program: 
+Build
+$ cd src/
+$ qmake
+$ make
+
+Execute
+$ ./puppeteer <optional filename>
+
+How to use my extra features: 
+N/A
+
+I have created the following data files, which are in the data directory:
+N/A
+
+My program assumes the following:
+The executable must be run either in the same directory as shader.frag and shader.vert, or in a directory containing src/shader.frag and src/shader.vert.

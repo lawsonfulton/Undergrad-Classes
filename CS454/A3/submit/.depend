@@ -1,0 +1,14 @@
+BinderMain.o: BinderMain.cpp Binder.h Message.h Database.h
+Binder.o: Binder.cpp Binder.h Message.h Database.h Messenger.h \
+  IncomingSocketManager.h MyExceptions.h
+Message.o: Message.cpp Message.h rpc.h MyExceptions.h
+Messenger.o: Messenger.cpp Messenger.h Message.h MyExceptions.h
+IncomingSocketManager.o: IncomingSocketManager.cpp \
+  IncomingSocketManager.h MyExceptions.h
+OutgoingSocketManager.o: OutgoingSocketManager.cpp \
+  OutgoingSocketManager.h MyExceptions.h
+Database.o: Database.cpp Database.h
+rpc.o: rpc.cpp rpc.h RPCServer.h OutgoingSocketManager.h Message.h \
+  Messenger.h Database.h MyExceptions.h
+RPCServer.o: RPCServer.cpp RPCServer.h OutgoingSocketManager.h Message.h \
+  Messenger.h rpc.h Database.h MyExceptions.h IncomingSocketManager.h

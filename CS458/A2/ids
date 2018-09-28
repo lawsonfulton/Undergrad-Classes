@@ -1,0 +1,376 @@
+#!/usr/bin/python
+import sys
+import re
+import csv
+import time
+import struct
+import socket
+import math
+import subprocess
+from collections import defaultdict
+from datetime import datetime, timedelta, date
+
+
+def main():
+    ids = IntrusionDetector()
+    parser = PacketParser()
+
+    for packet in parser.packets():
+        ids.scan(packet)
+
+
+class Packet:
+    def __init__(self, packet_string):
+        self.string = packet_string.strip()
+
+        lines = packet_string.split("\n")
+        tokens = [line.split() for line in lines[:-1]]
+
+        self.timestamp = datetime.strptime(tokens[0][0],"%H:%M:%S.%f")
+        self.type = tokens[0][1]
+
+        if self.type == "IP":
+            self.parse_ip_packet(tokens)
+        elif self.type == "ARP":
+            self.parse_arp_packet(tokens)
+        else:
+            self.type = "Unknown"
+
+        self.set_protocol(tokens)
+        self.set_DNS_vars(tokens)
+        self.set_TCP_flags(tokens)
+        self.read_payload(tokens)
+
+    def parse_ip_packet(self, tokens):
+        self.source = IpAddr(tokens[1][0])
+        self.dest = IpAddr(tokens[1][2].strip(":"))
+        self.protocol = tokens[0][13]
+
+    def parse_arp_packet(self, tokens):
+        pass
+
+    def set_protocol(self, tokens):
+        if "proto" in tokens[0]:
+            self.protocol = tokens[0][tokens[0].index("proto") + 1]
+        else:
+            self.protocol = None
+
+    def set_DNS_vars(self, tokens):
+        if self.protocol == "UDP" and self.dest.port == "53" and 'A?' in tokens[1]:
+            index = tokens[1].index('A?')
+            self.dns_lookup_host = tokens[1][index + 1].rstrip(".")
+        else:
+            self.dns_lookup_host = None
+
+    def set_TCP_flags(self, tokens):
+        self.flags = ""
+
+        if self.protocol == "TCP":
+            index = tokens[1].index("Flags")
+            flags = tokens[1][index + 1]
+
+            if "none" not in flags:
+                self.flags = flags
+
+    def read_payload(self, tokens):
+        self.payload = ""
+
+        if self.protocol == "UDP" or self.protocol == "TCP":
+            self.payload = "".join((l[-1] for l in tokens[2:]))
+
+    def is_SYN(self):
+        if self.protocol == "TCP":
+            if "S" in self.flags and "." not in self.flags:
+                return True
+
+        return False
+
+    def is_ACK(self):
+        if self.protocol == "TCP":
+            if "S" not in self.flags and "." in self.flags:
+                return True
+
+        return False
+
+    def is_SYN_ACK(self):
+        if self.protocol == "TCP":
+            if "S" in self.flags and "." in self.flags:
+                return True
+
+        return False
+
+    def __str__(self):
+        return self.string
+
+
+class IpAddr:
+    def __init__(self, ip_string):
+        tokens = ip_string.split(".") 
+
+        if '/' in tokens[3]:
+            net, bits = tokens[3].split('/')
+            self.addr = tokens[0] + "." + tokens[1] + "." + tokens[2] + "." + net
+            self.submask = ((1L << int(bits)) - 1)
+        else:
+            self.addr = self.addr = tokens[0] + "." + tokens[1] + "." + tokens[2] + "." + tokens[3]
+            self.submask = None
+
+        #Has port number
+        if len(tokens) == 5:
+            self.port = tokens[4]
+        else:
+            self.port = None
+
+        self._addrbits = struct.unpack('<L', socket.inet_aton(self.addr))[0]
+
+    def in_subnet(self, subnet):
+        return self._addrbits & subnet.submask == subnet._addrbits & subnet.submask
+
+    def __str__(self):
+        if self.port:
+            return self.addr + "." + self.port
+        else:
+            return self.addr
+
+    def __hash__(self):
+        return hash(str(self))
+
+    def __eq__(self, other):
+        return str(self) == str(self)
+
+
+class PacketParser:
+    time = re.compile ('(..:..:..\.[\w]*) ')
+
+    def __init__(self):
+        pass
+
+    def packets(self):
+        packet_string = ""
+
+        for line in self.stdin_lines():
+            if self.get_timestamp(line) and packet_string != "":
+                try:
+                    yield Packet(packet_string)
+                except:
+                    pass
+                packet_string = line
+            else:
+                packet_string += line
+
+        try:
+            yield Packet(packet_string)
+        except:
+            pass
+
+    #Hack to make contuous monitoring of unput | (pipe) possible
+    def stdin_lines(self):
+        while True:
+            try:
+                line = sys.stdin.readline()
+            except KeyboardInterrupt:
+                break
+
+            if not line:
+                break
+
+            yield line
+
+    def get_timestamp(self, line): #return true if have timestamp on this line
+        timestamp = PacketParser.time.match(line)
+        return timestamp
+
+
+class IntrusionDetector:
+    attack_type = "Generic Attack"
+
+    def __init__(self):
+        self.detectors = []
+
+        self.detectors.append(SpoofedIpDetector())
+        self.detectors.append(UnauthAccessDetector())
+        self.detectors.append(MaliciousHostsDetector())
+        self.detectors.append(RandomScanningDetector())
+        self.detectors.append(CodeRedDetector())
+        self.detectors.append(ConfickerDetector())
+
+    def alert_message(self, details):
+        print "[%s]: %s" % (self.attack_type, details)
+        sys.stdout.flush()
+
+    def scan(self, packet):
+        if packet.type != "Unknown":
+            for detector in self.detectors:
+                detector.scan(packet)
+
+
+class SpoofedIpDetector(IntrusionDetector):
+    attack_type = "Spoofed IP address"
+    local_subnet = IpAddr("10.97.0.0/16")
+
+    def __init__(self):
+        pass
+
+    def scan(self, packet):
+        if packet.type == "ARP":
+            return
+        elif self.spoofed_address(packet):
+            details = "src:%s, dst:%s" % (packet.source, packet.dest)
+            self.alert_message(details)
+
+    def spoofed_address(self, packet):
+        return not self.local_address(packet.source) and not self.local_address(packet.dest)
+
+    def local_address(self, ip):
+        return ip.in_subnet(self.local_subnet)
+
+
+class UnauthAccessDetector(IntrusionDetector):
+    local_subnet = IpAddr("10.97.0.0/16")
+
+    def __init__(self):
+        self.attempt_ips = {}
+        self.allowed_subnets = []
+
+        self.allowed_subnets.append(IpAddr("10.97.0.0/16"))
+
+        filename = "GeoLiteCity.csv"
+        with open(filename, 'rb') as csvfile:
+            city_reader = csv.reader(csvfile)
+            for row in city_reader:
+                if row[1] == "North America" and row[2] == "Canada":
+                    if row[3] == "Kitchener" or row[3] == "Waterloo":
+                        self.allowed_subnets.append(IpAddr(row[0]))
+
+    def scan(self, packet):
+        if packet.protocol != "TCP":
+            return
+
+        #Look for a connection attempt into our LAN
+        if packet.dest.in_subnet(self.local_subnet):
+            if not self.in_allowed_subnets(packet.source):
+                self.check_connection_attempt(packet)
+
+        #If we are responding to a previous attempt
+        if packet.source.in_subnet(self.local_subnet):
+            self.check_accept(packet)
+        
+    def in_allowed_subnets(self, ip):
+        for subnet in self.allowed_subnets:
+            if ip.in_subnet(subnet):
+                return True
+
+        return False
+
+    #Will raise an alert if source ip has not already attempted to connect
+    def check_connection_attempt(self, packet):
+        if packet.source not in self.attempt_ips and packet.is_SYN():
+            self.alert_message("Attempted server connection", packet.source, packet.dest)
+            self.attempt_ips[packet.source] = "Attempted"
+
+    def check_accept(self, packet):
+        if packet.dest in self.attempt_ips and self.attempt_ips[packet.dest] != "Accepted" and packet.is_SYN_ACK():
+            self.alert_message("Accepted server connection", packet.dest, packet.source)
+            self.attempt_ips[packet.source] = "Accepted"
+
+    def alert_message(self, atk_type, rem, srv):
+        details = "rem:%s, srv:%s" % (rem, srv)
+        print "[%s]: %s" % (atk_type, details)
+        sys.stdout.flush()
+
+
+class MaliciousHostsDetector(IntrusionDetector):
+    attack_type = "Malicious host lookup"
+
+    def __init__(self):
+        self.bad_domains = []
+
+        with open('domains.txt', 'rb') as domains_file:
+            for line in domains_file:
+                self.bad_domains.append(line.strip())
+
+    def scan(self, packet):
+        if packet.dns_lookup_host:
+            if packet.dns_lookup_host in self.bad_domains:
+                details = "src:%s, host:%s" % (packet.source, packet.dns_lookup_host)
+                self.alert_message(details)
+
+
+class RandomScanningDetector(IntrusionDetector):
+    attack_type = "Potential random scan"
+
+    def __init__(self):
+        self.udp_packets = defaultdict(list)
+        self.tcp_packets = defaultdict(list)
+
+    def scan(self, packet):
+        if packet.protocol == "UDP":
+            self.scan_for(packet, self.udp_packets)
+        elif packet.is_SYN():
+            self.scan_for(packet, self.tcp_packets)
+
+    def scan_for(self, packet, source_dict):
+        current_time = packet.timestamp
+        source = packet.source
+
+        packet_list = source_dict[source.addr]
+        packet_list.append(packet)
+
+        d = timedelta(seconds = 2)
+        is_atk = self.check_unique(delta=d, num_unique=10, lst=packet_list, cur_time=current_time, source=source)
+
+        if is_atk:
+            self.alert_message("att:%s"%packet.source.addr)
+
+    #Will return true if there has been num_unique distinct destination addresses sent
+    #from source address in the past seconds seconds
+    def check_unique(self, delta, num_unique, lst, cur_time, source):
+        unique = {}
+
+        for packet in reversed(lst):
+            tdelta = cur_time - packet.timestamp
+
+            if tdelta < delta:
+                unique[packet.dest] = None
+            else:
+                break #TODO should I delete old packets here?
+
+        return len(unique) >= num_unique
+
+
+class CodeRedDetector(IntrusionDetector):
+    attack_type = "Code Red exploit"
+    code_red_str = "GET./default.ida?NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u9090%u8190%u00c3%u0003%u8b00%u531b%u53ff%u0078%u0000%u00=a..HTTP/1.0"
+    
+    def __init__(self):
+        pass
+
+    def scan(self, packet):
+        if packet.protocol == "TCP" and packet.dest.port == "80":
+            if self.code_red_str in packet.payload:
+                self.alert_message("src:%s, dst:%s" % (packet.source, packet.dest))
+
+
+class ConfickerDetector(IntrusionDetector):
+    attack_type = "Conficker worm"
+
+    def __init__(self):
+        self.bad_domains = self.generate_domains()
+
+    def generate_domains(self):
+        process = subprocess.Popen(['./dga'], stdout=subprocess.PIPE)
+        out, err = process.communicate()
+        return out.rstrip().split()
+
+    def scan(self, packet):
+        if packet.dns_lookup_host:
+            if packet.dns_lookup_host in self.bad_domains:
+                details = "src:%s" % packet.source
+                self.alert_message(details)
+
+
+if __name__ == "__main__":
+    main()
+
+
+
